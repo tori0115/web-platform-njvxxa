@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+    <meta charset="utf-8">
+    <title>Verdelícias | Home</title>
+    <link rel="stylesheet" href="css/estiloPostar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a987110fe2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="areaSegura">
+            <img src="images/logoBranco.png" id="logoHeader">
+            <nav id="navPrincipal">
+                <ul>
+                    <li>RECEITAS</li>
+                    <li>RESTAURANTES</li>
+                    <li>SAÚDE</li>
+                </ul>
+            </nav>
+            <input type="text" id="inputProcurar" name="Procurar" placeholder="  Procurar"><img src="images/lupa.png"
+                id="imgLupa">
+            <img src="images/user.png" id="imgUser">
+        </div>
+    </header>
+    <nav id="navDietas">
+        <div class="areaSegura dietas">
+            <ul>
+                <li style="margin-left: 0;">Veganismo</li>
+                <li>Vegetarianismo</li>
+                <li>Ovolactovegetarianismo</li>
+                <li>Lactovegetarianismo</li>
+                <li>Pescetarianismo</li>
+                <i class="fa-solid fa-bars barra"></i>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="dadosReceita">
+        <p><h1>Descreva a receita que deseja publicar:</h1></p>
+
+        <p>Nome da receita:</p>
+        <input type="text" id= "inputNomeReceita">
+
+        <section id="ajuste">
+            <p>
+                <div>
+                    Rendimento:
+                    <p>
+                        <input type="number" id="porcoesInput"> porções
+                    </p>
+                </div> 
+               
+            <div>
+                Tempo de preparo:
+                <p>
+                    <input type="text" id="preparadoInput">
+                </p>
+            </div>
+            </p>
+        </section>
+
+        <p>Ingredientes:</p>
+        <div id="backCinza">
+            <div id="inputsIngredientes">
+                <input id="inputQtdIngredientes" type="text"> 
+                <select id="inputMedidasIngredientes" name="select">
+                    <option value="valor1" selected>Selecione a medida:</option>
+                    <option value="valor2">colher (es) de</option>
+                    <option value="valor3">ml de</option>
+                    <option value="valor4">litro (s) de</option>
+                    <option value="valor5">xícara (s) de</option>
+                    <option value="valor6">gramas de</option>
+                    <option value="valor7">unidade (s) de</option>
+                </select>
+                <input id="inputNomeIngredientes" type="text">
+                <img src="images/iconAdicionar.png" id="iconeAdicionar">
+                <!-- <i class="fa-solid fa-circle-plus" id="iconeAdicionar"></i>  -->
+            </div>
+        </div>   
+
+        <p>Modo de Preparo:</p>
+        <div id="backCinza">
+            <div id="conteudoModoPreparo">
+
+                <div id="etapaPreparo">
+                     1.
+                </div>
+
+                <div id="etapaPreparo">
+                    2.
+                </div>
+
+            </div>
+
+           <!--  <img src="images/adicionar.png" id="iconeAdicionar"> -->
+
+        </div>
+
+        <p>Fotos da Receita:</p>
+        <div id="conteudoImagem">
+                <img src="images/iconImagem.png" id="iconeImagem">
+
+                <input type="file" id="InputFile">
+        </div>
+
+        <p>Tipo da dieta:</p>
+        <select name="select">
+            <option value="valor1">Vegetarianismo</option>
+            <option value="valor2" selected>Veganismo</option>
+            <option value="valor3">Pescetarianismo</option>
+            <option value="valor4">Ovolactovegetarianismo</option>
+            <option value="valor4">Lactovegetarianismo</option>
+          </select>
+        
+        
+
+    </div>
+
+</body>
